@@ -62,6 +62,7 @@ class PororoCaptionFactory(PororoFactoryBase):
             load_dict = download_or_load(
                 f"transformer/{self.config.n_model}",
                 "en",
+                'model'
             )
             tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
 

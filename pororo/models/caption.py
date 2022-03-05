@@ -390,10 +390,10 @@ class Detr(object):
         self.device = device
 
         self.model = torch.hub.load(
-            "facebookresearch/detr",
+            "model/facebookresearch_detr_main/",
             "detr_resnet50",
             pretrained=True,
-        )
+            source='local')
         self.model.eval().to(device)
 
         # standard PyTorch mean-std input image normalization
