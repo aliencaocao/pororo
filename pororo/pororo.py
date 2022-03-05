@@ -11,44 +11,7 @@ from pororo.tasks.utils.base import PororoTaskBase
 
 import torch
 
-from pororo.tasks import (
-    # PororoAgeSuitabilityFactory,
-    # PororoAesFactory,
-    # PororoAsrFactory,
-    # PororoBlankFactory,
-    PororoCaptionFactory,
-    # PororoCollocationFactory,
-    # PororoConstFactory,
-    # PororoDpFactory,
-    # PororoGecFactory,
-    # PororoP2gFactory,
-    # PororoInflectionFactory,
-    # PororoLemmatizationFactory,
-    # PororoMrcFactory,
-    # PororoNerFactory,
-    # PororoNliFactory,
-    # PororoOcrFactory,
-    # PororoParaIdFactory,
-    # PororoParaphraseFactory,
-    # PororoG2pFactory,
-    # PororoPosFactory,
-    # PororoQuestionGenerationFactory,
-    # PororoReviewFactory,
-    # PororoSentenceFactory,
-    # PororoSentimentFactory,
-    # PororoSrlFactory,
-    # PororoStsFactory,
-    # PororoContextualFactory,
-    # PororoSummarizationFactory,
-    # PororoTokenizationFactory,
-    # PororoTranslationFactory,
-    # PororoWordFactory,
-    # PororoWordTranslationFactory,
-    # PororoZeroShotFactory,
-    # PororoSpeechTranslationFactory,
-    # PororoWsdFactory,
-    # PororoTtsFactory,
-)
+from pororo.tasks import PororoCaptionFactory
 
 SUPPORTED_TASKS = {"caption": PororoCaptionFactory}
 
